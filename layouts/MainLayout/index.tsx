@@ -3,6 +3,7 @@ import s from './MainLayout.module.scss';
 import cn from 'classnames';
 
 import {Header} from "../../components/Header";
+import LastNewsRight from "../../components/LastNewsRight";
 
 
 interface MainLayoutProps {
@@ -16,7 +17,7 @@ interface MainLayoutProps {
 export const MainLayout: React.FC<MainLayoutProps> = ({
                                                      children,
                                                      className,
-                                                     hideReportButton,
+                                                     hideReportButton= true,
                                                      hideMenu,
                                                      contentFullWidth,
                                                      hideComments,
@@ -31,7 +32,9 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
                 <div>Пост</div>
                 <div>Пост</div>
             </div>
-            {hideReportButton && <div className={s.lastNews}>dddd</div>}
+            {hideReportButton && <LastNewsRight />
+
+            /*<div className={s.lastNews}>dddd</div>*/}
 
         </div>
     );
