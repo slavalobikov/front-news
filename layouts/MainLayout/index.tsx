@@ -4,6 +4,7 @@ import cn from 'classnames';
 
 import {Header} from "../../components/Header";
 import LastNewsRight from "../../components/LastNewsRight";
+import MainPosts from "../../components/MainPosts";
 
 
 interface MainLayoutProps {
@@ -27,14 +28,9 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
         <div className={cn([s.wrapper], className)}>
             <div className={s.content}>
                 <Header hideReportButton={hideReportButton}/>
-                <div>Пост</div>
-                <div>Пост</div>
-                <div>Пост</div>
-                <div>Пост</div>
+                <MainPosts />
             </div>
-            {hideReportButton && <LastNewsRight />
-
-            /*<div className={s.lastNews}>dddd</div>*/}
+            {hideReportButton && <LastNewsRight />}
 
         </div>
     );
