@@ -2,7 +2,7 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['vesti.bntu.by'],
+    domains: ['vesti.bntu.by', 'img.zerkalo.io'],
   },
 
 }

@@ -1,0 +1,27 @@
+.content {
+  h3 {
+    font-weight: normal;
+
+
+    .time {
+      line-height: 22px;
+      font-size: 13px;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .title {
+      font-size: 15px;
+      line-height: 23px;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .title {
+        color:#c00;
+      }
+    }
+  }
+}
