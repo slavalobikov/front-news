@@ -1,0 +1,49 @@
+.aside {
+  padding: 0 20px;
+  margin-bottom: 20px;
+
+  .title {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    display: block;
+    margin: 0 -20px;
+    padding: 10px 20px 0px;
+    font-size: 13px;
+    line-height: 18px;
+    transition: background 50ms;
+
+    .time {
+      display: inline;
+      margin: 0;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      white-space: nowrap;
+      color: #999;
+    }
+  }
+
+  .date {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 11px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    color: #999;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .title {
+      color: #c60a00;
+    }
+  }
+}

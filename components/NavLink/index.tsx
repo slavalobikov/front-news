@@ -3,16 +3,12 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import s from './NavLink.module.scss';
 
-import PropTypes from 'prop-types';
-
 
 interface HeaderProps {
     href: string,
     exact?: boolean,
     className?: string,
 }
-
-
 
 export let NavLink: React.FC<HeaderProps> = ({ href, exact, children,className }) => {
     const { pathname } = useRouter();
