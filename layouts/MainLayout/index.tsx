@@ -13,25 +13,29 @@ interface MainLayoutProps {
     contentFullWidth?: boolean;
     hideReportButton?: boolean;
     className?: string;
+    usnews?: boolean;
 }
 
 export const MainLayout: React.FC<MainLayoutProps> = ({
-                                                     children,
-                                                     className,
-                                                     hideReportButton= true,
-                                                     hideMenu,
-                                                     contentFullWidth,
-                                                     hideComments,
+                                                          children,
+                                                          className,
+                                                          hideReportButton=false,
+                                                          usnews,
+                                                          hideMenu,
+                                                          contentFullWidth,
+                                                          hideComments,
 
-                                                 }) => {
+                                                      }) => {
     return (
         <div className={cn([s.wrapper], className)}>
-            <div className={s.content}>
-                <Header hideReportButton={hideReportButton}/>
-                <MainPosts />
+            <div className={s.fl}>
+                <div className={s.content}>
+                    <Header usnews={usnews} hideReportButton={hideReportButton}/>
+                    {hideReportButton && usnews && <MainPosts/>}
+                </div>
+                {hideReportButton && <LastNewsRight/>}
             </div>
-            {hideReportButton && <LastNewsRight />}
-
+            {children}
         </div>
     );
 };

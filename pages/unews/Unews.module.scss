@@ -1,0 +1,25 @@
+.content {
+  padding:20px;
+
+  h1 {
+    margin: 20px 0 20px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    color: #1d1d1f;
+  }
+
+  p {
+    a {
+      color: #192c8f;
+    }
+  }
+
+  .social {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    div {
+      border: solid;
+    }
+  }
+}
