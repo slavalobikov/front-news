@@ -1,0 +1,54 @@
+.content {
+  padding-left: 20px;
+  height: calc(100vh -  160px);
+
+
+  h1 {
+    margin: 20px 0 20px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    color: #1d1d1f;
+  }
+
+  .name {
+    margin-bottom: 20px;
+  }
+
+  b {
+    margin-bottom: 15px;
+  }
+
+  .adress {
+    margin-bottom: 10px;
+  }
+
+  .ardressAns {
+    margin-bottom: 20px;
+  }
+
+  .phone {
+    margin-bottom: 10px;
+  }
+
+  .phoneAns {
+    margin-bottom: 10px;
+  }
+
+  .mail {
+    margin-bottom: 10px;
+  }
+
+  .mailAns {
+    margin-bottom: 10px;
+  }
+
+  i {
+    margin-bottom: 10px;
+    font: 15px/21px Arial,Helvetica,sans-serif;
+  }
+
+  a {
+    color: #192c8f;
+  }
+}

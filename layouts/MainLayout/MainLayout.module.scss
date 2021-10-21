@@ -4,19 +4,22 @@
 .wrapper {
   background-color: $white;
   width: 1200px;
-  display: flex;
+
+  .fl {
+    display: flex;
+    .content {
+      width:100%;
+    }
 
 
-  .content {
-    width:100%;
+    .lastNews {
+      width: 300px;
+      flex-shrink: 0;
+      border: solid;
+      color:red;
+    }
+
   }
 
-
-  .lastNews {
-    width: 300px;
-    flex-shrink: 0;
-    border: solid;
-    color:red;
-  }
 
 }
